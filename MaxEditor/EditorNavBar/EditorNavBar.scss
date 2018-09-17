@@ -1,0 +1,51 @@
+@mixin transition {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navbarContainer {
+  display: flex;
+  flex: 1 0 100%;
+  justify-content: center;
+  max-height: 50px;
+}
+
+.navBar {
+  display: flex;
+  padding: 0px 7px;
+  margin: 0;
+  flex: 1 0 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navBar li {
+  display: flex;
+  flex: 1 1 100%;
+  color: white;
+  cursor: pointer;
+  padding: 14px;
+  margin: 14px 7px 0px 7px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabStyleActive {
+  @include transition;
+  background-color: #0daaff;
+  &:hover {
+    @include transition;
+    background-color: #72ceff;
+  }
+}
+
+.tabStyleInactive {
+  @include transition;
+  background-color: #8b8b8b;
+  &:hover {
+    @include transition;
+    background-color: #e0e0e0;
+  }
+}

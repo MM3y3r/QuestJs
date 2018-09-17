@@ -1,0 +1,27 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sectionHeader {
+  display: flex;
+  flex: 1 0 100%;
+  height: 50px;
+  background-color: #efefef;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.childContainer {
+  flex: 1 1 100%;
+}
+
+.child {
+  height: 20px;
+}
+
+.icon {
+  max-height: 30px;
+}
